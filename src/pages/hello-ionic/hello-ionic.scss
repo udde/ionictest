@@ -1,5 +1,32 @@
 
 ion-header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    #mennubutton{
+        float: left;
+    }
+    ion-icon {
+        float: right;
+        line-height: 140%;
+        // background-color: pink;
+        font-size: 1.6em;
+    }
+    h1 {
+        display: inline-block;
+        margin: 0 auto;
+        color: $places-blue;
+        span:first-child {
+            color: #888;
+        }
+        ion-icon {
+            margin-left: 0.1em;
+            font-size: 1.0em;
+            line-height: 100%;
+            color: $places-blue;
+        }
+    }
+
   ion-navbar {
     // .toolbar-background {
     //     background-color: #222;
