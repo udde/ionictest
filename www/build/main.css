@@ -21440,3 +21440,26 @@ hello-modal .modal-content #modalCloseButton {
   font-size: 1.8em;
   font-weight: 800;
 }
+
+hello-modal .modal-content .modal-toolbar {
+  background-color: pink;
+  list-style: none;
+  margin: 0;
+  text-align: right;
+}
+
+hello-modal .modal-content .modal-toolbar li {
+  display: inline-block;
+  margin: auto 0.2em;
+}
+
+hello-modal .modal-content .modal-toolbar li ion-icon {
+  font-size: 1.6em;
+  font-weight: 400;
+  line-height: 100%;
+  color: #333;
+}
+
+hello-modal .modal-content .modal-toolbar li:last-child > ion-icon {
+  font-weight: 400;
+}

@@ -7,15 +7,14 @@ import { HelloLogin } from '../hello-login/hello-login';
   templateUrl: 'hello-modal.html'
 })
 export class HelloModal {
-    content: any;
+
     constructor(
         public platform: Platform,
         public params: NavParams,
         public viewCtrl: ViewController
-    ) {
-        // content =
-  }
-  close() {
+    ) { }
+  
+    close() {
       this.viewCtrl.dismiss();
   }
 }
