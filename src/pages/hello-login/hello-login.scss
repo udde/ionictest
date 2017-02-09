@@ -1,11 +1,11 @@
 hello-login {
-    $places-blue: rgb(87, 175, 199);
-    $places-green: rgb(83, 184, 144);
+    
 
     .my-input-wrapper {
         // background-color: lightblue;
 
         width: 87%;
+        max-width: 22em;
         margin: 1.4em auto 4.8em;
         // padding
         // margin: auto;
