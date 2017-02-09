@@ -21344,11 +21344,11 @@ ion-header ion-icon {
 ion-header h1 {
   display: inline-block;
   margin: 0 auto;
-  color: #57afc7;
+  color: #fff;
 }
 
 ion-header h1 span:first-child {
-  color: #888;
+  color: #aaa;
 }
 
 ion-header h1 ion-icon {
@@ -21385,9 +21385,10 @@ ion-header ion-navbar ion-toolbar ion-icon {
 }
 
 hello-login .my-input-wrapper {
-  width: 87%;
+  width: 73%;
   max-width: 22em;
-  margin: 1.4em auto 4.8em;
+  min-width: 14em;
+  margin: 1.4em auto;
 }
 
 hello-login .my-input-wrapper .welcome-box {
@@ -21435,14 +21436,19 @@ hello-login .my-input-wrapper .input-box div a {
 
 hello-login .my-input-wrapper .create-box #createAccountButton {
   background-color: #53b890;
-  margin-top: 3.8em;
+  margin-top: 2.8em;
 }
 
-hello-login .my-input-wrapper .create-box .conenct-with {
-  margin-top: 1.0em;
+hello-login .my-input-wrapper .create-box .connect-with {
+  padding: 0.4em 0;
 }
 
-hello-login .my-input-wrapper .create-box .conenct-with span {
+hello-login .my-input-wrapper .create-box .connect-with ion-icon {
+  font-size: 1.6em;
+  margin: 0 0.3em 0 0.0em;
+}
+
+hello-login .my-input-wrapper .create-box .connect-with span {
   font-size: 0.8em;
 }
 
@@ -21459,7 +21465,7 @@ hello-modal .modal-content {
   background-color: rgba(251, 251, 251, 0.9);
   background-color: #fff;
   max-height: 85%;
-  min-height: 20%;
+  min-height: 50%;
   overflow: scroll;
   width: 100%;
   position: absolute;
@@ -21496,4 +21502,76 @@ hello-modal .modal-content .modal-toolbar li ion-icon {
 
 hello-modal .modal-content .modal-toolbar li:last-child > ion-icon {
   font-weight: 400;
+}
+
+hello-navmenu ion-content, hello-navmenu .content-ios, hello-navmenu .content-md {
+  background: #222;
+}
+
+hello-navmenu .personal-info {
+  background: #57afc7;
+  width: 100%;
+  min-height: 4em;
+  margin: 0;
+  padding: 0.4em;
+  color: whitesmoke;
+}
+
+hello-navmenu .personal-info .avatar {
+  width: 2.4em;
+  height: 2.4em;
+  background: whitesmoke;
+  border-radius: 50%;
+}
+
+hello-navmenu .personal-info h3 {
+  font-size: 1.1em;
+  margin: 0.2em 0 0;
+}
+
+hello-navmenu .personal-info h5 {
+  font-size: 0.8em;
+  margin: 0.2em 0 0;
+}
+
+hello-navmenu .list-container .list-section {
+  margin: 0;
+  padding: 0.4em 0.8em;
+  color: whitesmoke;
+  border-top: 1px solid gray;
+}
+
+hello-navmenu .list-container .list-section:first-child {
+  border-top: none;
+}
+
+hello-navmenu .list-container .list-section h4 {
+  margin: 0.4em 0 0.2em;
+  font-size: 0.9em;
+  color: lightslategray;
+}
+
+hello-navmenu .list-container .list-section ul {
+  padding: 0;
+  margin: 0 0;
+}
+
+hello-navmenu .list-container .list-section ul li {
+  list-style: none;
+  padding: 0.2em 0;
+}
+
+hello-navmenu .list-container .list-section ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+hello-navmenu .list-container ion-list ion-item {
+  background: #222;
+}
+
+hello-navmenu .list-container ion-list ion-item a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 0.9em;
 }

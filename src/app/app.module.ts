@@ -7,6 +7,8 @@ import { ListPage } from '../pages/list/list';
 import { InputPage } from '../pages/hello-input/hello-input';
 import { HelloModal } from '../pages/hello-modal/hello-modal';
 import { HelloLogin } from '../pages/hello-login/hello-login';
+import { HelloNavMenu } from '../pages/hello-navmenu/hello-navmenu';
+import { PressDirective } from './swipedown';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { HelloLogin } from '../pages/hello-login/hello-login';
     ListPage,
     InputPage,
     HelloModal,
-    HelloLogin
+    HelloLogin,
+    HelloNavMenu
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -29,7 +32,8 @@ import { HelloLogin } from '../pages/hello-login/hello-login';
     ListPage,
     InputPage,
     HelloModal,
-    HelloLogin
+    HelloLogin,
+    HelloNavMenu
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
