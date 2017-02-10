@@ -21276,6 +21276,11 @@ sub {
   }
 }
 
+.modal {
+  background: pink;
+  width: 300px;
+}
+
 page-hello-input .my-input-wrapper {
   width: 87%;
   margin: auto;
