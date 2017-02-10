@@ -1,25 +1,14 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ItemDetailsPage } from '../pages/item-details/item-details';
-import { ListPage } from '../pages/list/list';
-import { InputPage } from '../pages/hello-input/hello-input';
-import { HelloModal } from '../pages/hello-modal/hello-modal';
-import { HelloLogin } from '../pages/hello-login/hello-login';
-import { HelloNavMenu } from '../pages/hello-navmenu/hello-navmenu';
-import { PressDirective } from './swipedown';
+import { Page1 } from '../pages/page1/page1';
+import { Page2 } from '../pages/page2/page2';
 
 @NgModule({
   declarations: [
     MyApp,
-    HelloIonicPage,
-    ItemDetailsPage,
-    ListPage,
-    InputPage,
-    HelloModal,
-    HelloLogin,
-    HelloNavMenu
+    Page1,
+    Page2
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -27,13 +16,8 @@ import { PressDirective } from './swipedown';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HelloIonicPage,
-    ItemDetailsPage,
-    ListPage,
-    InputPage,
-    HelloModal,
-    HelloLogin,
-    HelloNavMenu
+    Page1,
+    Page2
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
