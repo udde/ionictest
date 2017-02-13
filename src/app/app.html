@@ -8,7 +8,7 @@
 
   <ion-content>
     <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p, theModal)">
         {{p.title}}
       </button>
     </ion-list>
@@ -27,12 +27,14 @@
 </ion-header>
 <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
 
-<div class="app-content" #content>
+
+<ion-content class="app-content" #content>
+<div class="map"><h1>KARTA</h1></div>
 
 
-  <div class="modal">
+  <div class="modal" #theModal>
     <ion-nav [root]="rootPage" swipeBackEnabled="false"></ion-nav>
   </div>
 
-</div>
+</ion-content>
 
