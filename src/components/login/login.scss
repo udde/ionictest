@@ -1,0 +1,51 @@
+modal {
+    
+    // .wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 40%;
+    max-height: 90%;
+    // height: 20%;
+    background: lightblue;
+    overflow: scroll;
+    &.modal-closed {
+        display: none;
+    }
+    &.modal-open {
+        display: block;
+    }
+    // }
+
+    $modal-top-bar-height: 1.6em;
+    .modal-top {
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+        height: $modal-top-bar-height;
+        background: pink;
+        p {
+            text-align: right;
+            padding: 0px 10px;
+            line-height: 90%;
+            font-size: 1.6em;
+            margin: 0;
+        }
+    }
+    ion-nav {
+         top: $modal-top-bar-height;
+    }
+    // .modal-content {
+    //     position: absolute;
+    //     width: 100%;
+    //     height: calc(100% - #{$modal-top-bar-height});
+    //     background: gold;
+    //     ion-nav {
+    //         position: relative;
+    //         background: greenyellow;
+    //         height: auto;
+    //         width: 90%;
+    //         margin: 3% 5%;
+    //     }
+    // }
+}

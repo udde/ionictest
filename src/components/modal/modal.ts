@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 
 import { NavController, Nav } from 'ionic-angular';
-
+import { Login } from '../components/login/login';
 
 @Component({
   selector: 'modal',
@@ -16,10 +16,10 @@ export class Modal {
 
     push(page: any) {
         if (!this.isOpen)
-            this.open()
+            this.open();
       console.log("push to modal");
       console.log(page);
-      //this.nav.push(page);
+      this.nav.push(page);
     }
     open() {
         this.isOpen = true;

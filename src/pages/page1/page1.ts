@@ -13,8 +13,7 @@ export class Page1 {
   constructor(public navCtrl: NavController) {
     
   }
-  topage2() {
-    this.navCtrl.push(Page2, {modal: 'active'});
-
-  }
+  // topage2() {
+  //   this.navCtrl.push(Page2, {modal: 'active'});
+  // }
 }
