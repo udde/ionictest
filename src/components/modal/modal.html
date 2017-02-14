@@ -1,12 +1,17 @@
-<div class="wrapper">
+<div class="wrapper {{modalClass}}">
 
-    <div class="modal-top">
+    <div class="modal-top-bar">
         <p (click)="close()"><b>x</b></p>
     </div>
-    <ion-nav [root]="rootPage" swipeBackEnabled="false">
-        ok
-    </ion-nav>
     
+    
+    
+    <ion-nav [root]="" swipeBackEnabled="false"></ion-nav>
+    
+
+    <div class="modal-footer">
+        <p (click)="close()"><b>x</b></p>
+    </div>
     <!--<div class="modal-content">-->
         
         <!--hej

@@ -1,51 +1,16 @@
-modal {
-    
-    // .wrapper {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    min-height: 40%;
-    max-height: 90%;
-    // height: 20%;
-    background: lightblue;
-    overflow: scroll;
-    &.modal-closed {
-        display: none;
-    }
-    &.modal-open {
-        display: block;
-    }
-    // }
+login {
+    position: relative !important;
+    contain: none !important;  
 
-    $modal-top-bar-height: 1.6em;
-    .modal-top {
-        position: fixed;
-        z-index: 1000;
-        width: 100%;
-        height: $modal-top-bar-height;
-        background: pink;
-        p {
-            text-align: right;
-            padding: 0px 10px;
-            line-height: 90%;
-            font-size: 1.6em;
-            margin: 0;
+    .login-box {
+        background: honeydew;
+        padding: 6px;
+        // height: 160px;
+        width: 400px;
+        margin: 0;
+        h1 {
+            color: dodgerblue;
+            margin: 40px;
         }
     }
-    ion-nav {
-         top: $modal-top-bar-height;
-    }
-    // .modal-content {
-    //     position: absolute;
-    //     width: 100%;
-    //     height: calc(100% - #{$modal-top-bar-height});
-    //     background: gold;
-    //     ion-nav {
-    //         position: relative;
-    //         background: greenyellow;
-    //         height: auto;
-    //         width: 90%;
-    //         margin: 3% 5%;
-    //     }
-    // }
 }

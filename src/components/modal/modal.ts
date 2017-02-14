@@ -1,15 +1,16 @@
 import { Component, ViewChild } from '@angular/core';
 
 import { NavController, Nav } from 'ionic-angular';
-import { Login } from '../components/login/login';
+import { Login } from '../login/login';
 
 @Component({
   selector: 'modal',
   templateUrl: 'modal.html'
 })
 export class Modal {
+    rootPage: any = Login;
     isOpen: Boolean = false;
-    cssClass: string = 'modal-closed';
+    modalClass: string = 'modal-closed';
     @ViewChild(Nav) nav: Nav;
 
     constructor() { }
@@ -19,14 +20,14 @@ export class Modal {
             this.open();
       console.log("push to modal");
       console.log(page);
-      this.nav.push(page);
+      this.nav.push(Login);
     }
     open() {
         this.isOpen = true;
-        this.cssClass = 'modal-open'
+        this.modalClass = 'modal-open'
     }
     close() {
         this.isOpen = false;
-        this.cssClass = 'modal-closed'
+        this.modalClass = 'modal-closed'
     }
 }

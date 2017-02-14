@@ -1,26 +1,36 @@
 modal {
-    
-    // .wrapper {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    min-height: 40%;
-    max-height: 90%;
-    // height: 20%;
-    background: lightblue;
-    overflow: scroll;
-    &.modal-closed {
-        display: none;
+
+    .wrapper {
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+        width: 100%;
+        min-height: 0%;
+        max-height: 90%;
+        background: lightblue;
+        overflow: scroll;
+
+        transition-property: bottom;
+        transition-delay: 500ms;
+        transition-duration: 500ms;
+
+        &.modal-closed {
+            transition-property: bottom;
+            transition-delay: 100ms;
+            transition-duration: 500ms;
+            bottom: -100%;
+        }
+        &.modal-open {
+            transition-property: bottom;
+            transition-delay: 700ms;
+            transition-duration: 500ms;
+            bottom: 0;
+        }
     }
-    &.modal-open {
-        display: block;
-    }
-    // }
 
     $modal-top-bar-height: 1.6em;
-    .modal-top {
+    .modal-top-bar {
         position: relative;
-        z-index: 1000;
         width: 100%;
         height: $modal-top-bar-height;
         background: pink;
@@ -32,26 +42,24 @@ modal {
             margin: 0;
         }
     }
+
     ion-nav {
-         position: relative;
-         top: $modal-top-bar-height;
-        //  height: calc(100% - #{$modal-top-bar-height});
-       
-        // .ion-page {
-        //     height: auto;
-        // }
+        margin: 0;
+        position: relative;
+        contain: none;
     }
-    // .modal-content {
-    //     position: absolute;
-    //     width: 100%;
-    //     height: calc(100% - #{$modal-top-bar-height});
-    //     background: gold;
-    //     ion-nav {
-    //         position: relative;
-    //         background: greenyellow;
-    //         height: auto;
-    //         width: 90%;
-    //         margin: 3% 5%;
-    //     }
-    // }
+
+    .modal-footer {
+        position: relative;
+        width: 100%;
+        height: $modal-top-bar-height;
+        background: darkcyan;
+        p {
+            text-align: right;
+            padding: 0px 10px;
+            line-height: 90%;
+            font-size: 1.6em;
+            margin: 0;
+        }
+    }
 }
