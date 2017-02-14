@@ -5,12 +5,15 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 import { Page1 } from '../pages/page1/page1';
 import { Page2 } from '../pages/page2/page2';
 
+import { Modal } from '../components/modal/modal';
+
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
+  @ViewChild(Modal) modal: Modal;
 
   rootPage: any = Page1;
 
@@ -32,9 +35,10 @@ export class MyApp {
       Splashscreen.hide();
     });
   }
-  
+
   openPage(page, parent?: any) {
     // this.nav.setRoot(page.component);
-    this.nav.push(Page2, {modal: 'active', parent: parent})
+    // {modal: 'active', parent: parent}
+    this.modal.push(page.component);
   }
 }

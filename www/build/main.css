@@ -21279,11 +21279,11 @@ sub {
 .modal-active {
   bottom: 0 !important;
   border: solid 2px limegreen !important;
-  transition: 5s;
+  transition: 400ms;
 }
 
 .map {
-  position: relative;
+  position: fixed;
   width: 100%;
   height: 100%;
   background: coral;
@@ -21307,6 +21307,56 @@ sub {
   position: relative;
   background: none;
   height: 100%;
+}
+
+modal {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 300px;
+  background: lightblue;
+}
+
+modal.modal-closed {
+  display: none;
+}
+
+modal.modal-open {
+  display: block;
+}
+
+modal .modal-content {
+  width: 100%;
+  height: 100%;
+  border: 2px gold solid;
+  position: relative;
+  bottom: 0;
+}
+
+modal .modal-content.modal-closed {
+  display: none;
+}
+
+modal .modal-content.modal-open {
+  display: block;
+}
+
+modal .modal-content .modal-top {
+  height: 100px;
+  width: 100%;
+  background: pink;
+}
+
+modal .modal-content .modal-top p {
+  margin-top: 0;
+  text-align: right;
+  padding: 2px 10px;
+  font-size: 1.6em;
+}
+
+modal .modal-content ion-nav {
+  border: 1px solid green;
+  top: auto;
 }
 
 page-page2 .page2 {
