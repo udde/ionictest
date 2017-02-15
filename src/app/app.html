@@ -16,25 +16,26 @@
 
 </ion-menu>
 
+<!--<div >-->
+<!--<ion-content  >-->
+
+<ion-content class="app-content" #content> 
 
 <ion-header >
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
+    <!--<button ion-button>-->
+      <!--<ion-icon name="lock"></ion-icon>-->lock
+    <!--</button>-->
     <ion-title>Title</ion-title>
   </ion-navbar>
 </ion-header>
+<!--</ion-content>-->
 <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
 
-
-<ion-content class="app-content" #content>
-    <!-- <div class="map"><h1>KARTA</h1></div> -->
-    <!--<login></login>-->
-    <modal class="modal-open"></modal>
-  <!-- <div class="modal" #theModal>
-      <p (click)="close()">stäng</p>
-      <ion-nav [root]="rootPage" swipeBackEnabled="false"></ion-nav>
-  </div> -->
-
+  <div class="map"><h1>KARTA</h1></div> 
+  <modal class="modal-open"></modal>
 </ion-content>
+<!--</div>-->
